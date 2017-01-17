@@ -1,0 +1,8 @@
+uk/co/raytheon/storage/FileSystemStorageService.class
+META-INF/spring-configuration-metadata.json
+uk/co/raytheon/FileUploadController.class
+uk/co/raytheon/storage/StorageException.class
+uk/co/raytheon/storage/StorageFileNotFoundException.class
+uk/co/raytheon/storage/StorageService.class
+uk/co/raytheon/PicTestWebServerApplication.class
+uk/co/raytheon/storage/StorageProperties.class

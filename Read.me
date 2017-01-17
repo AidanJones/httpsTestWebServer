@@ -1,0 +1,18 @@
+
+server.ssl.key-store=classpath:sample.jks
+server.ssl.key-store-password=secret
+server.ssl.key-password=password
+
+rm src/main/resources/sample.jks
+
+keytool -genkey -alias dpSample -keyalg RSA -keystore src/main/resources/sample.jks
+Password from above = secret
+Enter localhost as first name, the sensible details until it asks you to confirm. 
+The enter the password for the key = password
+
+
+keytool -exportcert -alias dpSample -keystore src/main/resources/sample.jks -rfc -file serverpub.pem
+
+
+mvn clean package -Dmaven.test.skip=true
+java -jar target/picTestWebServer-0.0.1-SNAPSHOT.jar

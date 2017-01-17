@@ -1,0 +1,15 @@
+{
+  "groups": [{
+    "name": "storage",
+    "type": "uk.co.raytheon.storage.StorageProperties",
+    "sourceType": "uk.co.raytheon.storage.StorageProperties"
+  }],
+  "properties": [{
+    "name": "storage.location",
+    "type": "java.lang.String",
+    "description": "Folder location for storing files",
+    "sourceType": "uk.co.raytheon.storage.StorageProperties",
+    "defaultValue": "upload-dir"
+  }],
+  "hints": []
+}
